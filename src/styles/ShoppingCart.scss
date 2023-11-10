@@ -1,0 +1,87 @@
+@use 'values';
+
+.cart-icon {
+  position: relative;
+  margin-top: 40%;
+}
+
+.badge {
+  position: absolute;
+  top: -70%;
+  right: 20%;
+  font-size: 10px;
+  /* other styles... */
+}
+
+.cart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+   h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+    color: values.$light-blue;
+    @media (min-width: 768px) {
+      font-size: 3em;
+    }
+    @media (min-width: 1024px) {
+      font-size: 4em;
+    }
+  }
+
+  button {
+    padding: 0.2rem;
+    border-radius: 5px;
+    background-color: rgba(189, 37, 37, 0.822);
+  }
+  .container {
+    display: grid;
+    width: 50%;
+    padding: 2rem;
+    background-color: values.$light-blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .cart-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.2rem;
+      border-radius: 5px;
+      background-color: rgba(178, 34, 34, 0);
+      border: 1px solid values.$secondary-color;
+
+      img {
+        width: 40%;
+      }
+    }
+  }
+  hr{
+    border-width: 1px;
+    border-color: values.$secondary-color;
+    margin: 0.5rem 0;
+  }
+  .cart-total-price{
+    span{
+      font-weight: 600;
+      color: values.$primary-color;
+    }
+  }
+}

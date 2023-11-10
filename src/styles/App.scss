@@ -1,0 +1,43 @@
+@use 'values';
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.products-container {
+  margin: 10% 5%;
+
+  li {
+    list-style: none;
+    display: grid;
+    padding: 0.7rem;
+    margin: 1em;
+    border-radius: 5px;
+    max-width: 200px;
+    .product-image {
+      width: 100px;
+    }
+  }
+}
+
+.add-btn {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #edf1d6;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #edf1d6;
+    color: #9dc08b;
+  }
+}
+
+.collapsed-content {
+  display: none;
+}
+

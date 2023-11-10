@@ -1,0 +1,51 @@
+@use 'values';
+
+.footer-container {
+  width: 100%;
+  background-color: values.$mainblack;
+  color: values.$light-blue;
+  padding: 1rem 1rem 1rem 1rem;
+  h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5rem;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 2%;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 25%;
+
+    ul {
+      width: 50%;
+      flex-direction: column;
+    }
+  }
+  .footer-social {
+    margin-top: 20%;
+    position: static;
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+  }
+  ul {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      padding: 1%;
+    }
+    a {
+      color: values.$light-blue;
+    }
+  }
+}

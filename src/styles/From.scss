@@ -1,0 +1,38 @@
+@use 'values';
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  
+  .card {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    padding: 2rem;
+    color: values.$primary-color;
+    background-color: values.$light-blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+  }
+  input {
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(178, 34, 34, 0);
+    border: 1px solid values.$secondary-color;
+  }
+}
